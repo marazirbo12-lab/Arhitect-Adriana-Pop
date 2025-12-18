@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Site arhitect">
+    <title>Arhitect Adriana Pop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+
+.navbar {
+  background-color: #f5efe2; 
+}
+
+.navbar .nav-link {
+  color: #000; 
+  transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: #a67c52; 
+}
+
+.navbar .navbar-brand {
+  color: #000;
+}
+
+.carousel-item img {
+  height: 500px; 
+  object-fit: cover; 
+  width: 100%;
+}
+
+.card-img-top {
+  height: 200px; 
+  object-fit: cover;
+  object-position: top;
+}
+
+.card {
+  background-color: #fcfaf3;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+
+#contact .card {
+  max-width: 400px;
+}
+
+.container .row .col {
+  border: 2px solid #c9b38c;
+  padding: 20px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+.footer { background-color: #243041; } 
+
+.footer a img { transition: transform 0.3s; } 
+
+.footer a img:hover { transform: scale(1.1); }
+ 
+.mt-2 a {
+  text-decoration: none;
+}
+.project-img {
+  max-width: 75%;     
+  border: 5px solid #D2A679; 
+  display: block;
+  margin: 0 auto;      
+  border-radius: 8px;   
+  margin-top: 20px;
+}
+.map-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  margin-bottom: 2rem;
+}
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.card {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+</style>
+</head>
+
+  <body>
+
+<body style="padding-top: 80px;">
+
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+  <img src="arhitect.png" alt="Logo" width="40" class="me-2">
+  ARH.ADRIANA
+</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#despre">Despre</a></li>
+        <li class="nav-item"><a class="nav-link" href="#proiecte">Proiecte</a></li>
+        <li class="nav-item"><a class="nav-link" href="#servicii">Servicii</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="home" class="mb-5">
+  <div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div class="carousel-inner">
+      
+      <div class="carousel-item active">
+        <img src="architecture-.jpg" class="d-block w-100 img-fluid" alt="Living room">
+      </div>
+
+      <div class="carousel-item">
+        <img src="interior-1944348.jpg" class="d-block w-100 img-fluid" alt="Scrisul a crea">
+      </div>
+
+      <div class="carousel-item">
+        <img src="kitchen.jpg" class="d-block w-100 img-fluid" alt="Bucătărie modernă">
+      </div>
+
+      <div class="carousel-item">
+        <img src="bathroom-1826126_1280.jpg" class="d-block w-100 img-fluid" alt="Baie minimalistă">
+      </div>
+
+      <div class="carousel-item">
+        <img src="pexels-photo-1109541.jpg" class="d-block w-100 img-fluid" alt="Desen grafic">
+      </div>
+    </div>
+
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+<section id="despre" class="container py-5">
+  <h2 class="mb-4 text-center">Despre</h2>
+  <p class="lead text-center">Arhitect cu pasiune pentru design modern, durabilitate și soluții elegante.</p>
+   <p>
+Arhitectura reprezintă mai mult decât construcția unor spații. Este arta de a crea medii funcționale,
+ estetice și armonioase, adaptate stilului de viață al fiecărui client. Fiecare proiect începe 
+ cu o viziune clară și se dezvoltă printr-un proces atent de planificare, 
+ analiză și creație, astfel încât rezultatul final să reflecte perfect nevoile și personalitatea beneficiarului.
+</p>
+<p>
+Ne concentrăm pe realizarea unor proiecte durabile, care îmbină designul modern cu soluții practice și eficiente. 
+Punem accent pe utilizarea inteligentă a spațiului, pe lumină naturală și pe alegerea materialelor de calitate, 
+pentru a oferi clădiri care nu sunt doar frumoase, ci și confortabile și eficiente energetic.
+</p>
+
+<p>
+Fiecare detaliu contează în procesul de creație. De la primele schițe până la implementarea finală, 
+abordăm fiecare proiect cu profesionalism, creativitate și atenție la detalii. 
+Scopul nostru este să transformăm ideile în realitate și să construim spații care inspiră,
+ oferind soluții personalizate pentru locuințe, spații comerciale și clădiri publice.
+</p>
+
+<div class="container text-center mt-5">
+  <div class="row">
+    <div class="col">
+      <h3>Viziunea noastră</h3>
+      <p>
+        Credem că arhitectura nu este doar despre clădiri, ci despre felul în care oamenii trăiesc, lucrează și se simt într-un spațiu. Fiecare proiect pe care îl realizăm pornește de la o idee simplă: să îmbinăm funcționalitatea cu estetica, creând spații care inspiră și oferă confort real.
+      </p>
+    </div>
+
+    <div class="col">
+      <h3>Abordarea noastră</h3>
+      <p>
+        Lucrăm îndeaproape cu clienții noștri pentru a înțelege nu doar nevoile lor practice, ci și stilul de viață, dorințele și personalitatea fiecărui proiect. De la primele schițe până la ultimele detalii de execuție, ne concentrăm pe claritate, echilibru și soluții durabile.
+      </p>
+    </div>
+
+    <div class="col">
+      <h3>De ce să ne alegi</h3>
+      <p>
+        Experiența, atenția la detalii și pasiunea pentru design ne diferențiază. Nu oferim doar planuri arhitecturale, ci construim concepte care prind viață și transformă ideile în realitate. Fie că este vorba despre o casă personală sau un proiect comercial, tratăm fiecare lucrare cu aceeași dedicare.
+      </p>
+    </div>
+  </div>
+</div>
+
+</section>
+
+<section id="proiecte" class="my-5">
+    <div class="container">
+  <h2>Proiectele Noastre</h2>
+  <p>
+    De-a lungul timpului, am realizat proiecte diverse, de la locuințe private moderne
+    până la spații comerciale complexe și clădiri publice. Mai jos poți descoperi
+    câteva exemple reprezentative.
+  </p>
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button"
+          data-bs-toggle="collapse" data-bs-target="#flush-collapseOne">
+          Casă unifamilială – stil modern
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          Acest proiect a constat în realizarea unei locuințe unifamiliale moderne, 
+          situată într-o zonă suburbană. Designul a pus accent pe lumina naturală, 
+          spații deschise și legătura dintre interior și exterior. 
+          Fațadele au fost realizate din beton aparent, sticlă și lemn tratat, 
+          pentru a oferi un echilibru între estetică și funcționalitate.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button"
+          data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+          Clădire de birouri – concept sustenabil
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          Proiectul clădirii de birouri a fost gândit ca un spațiu multifuncțional, 
+          cu soluții sustenabile integrate încă din faza de concept. 
+          Am utilizat sisteme de ventilație naturală, panouri fotovoltaice și 
+          fațade ventilate. Interiorul a fost organizat flexibil pentru a permite 
+          diferite tipuri de compartimentări și adaptări ulterioare.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button"
+          data-bs-toggle="collapse" data-bs-target="#flush-collapseThree">
+          Reabilitare clădire istorică
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          În cadrul acestui proiect, am lucrat la reabilitarea unei clădiri istorice 
+          de la sfârșitul secolului XIX. Intervenția a urmărit păstrarea elementelor 
+          originale de fațadă, refacerea ornamentelor și consolidarea structurii. 
+          Interiorul a fost adaptat pentru funcțiuni moderne, fără a compromite 
+          valoarea arhitecturală și istorică a imobilului.
+        </div>
+      </div>
+    </div>
+  </div>
+   <div class="row align-items-center mt-4">
+  <div class="col-md-6">
+    <p>
+      Pe lângă aceste exemple, fiecare proiect realizat reflectă atenția noastră pentru
+      detalii, respectul față de context și dorința de a crea spații care să răspundă
+      real nevoilor utilizatorilor.Colaborăm constant cu beneficiarii pentru a integra viziunea lor în fiecare etapă a procesului de proiectare. 
+      Alegem soluții arhitecturale durabile, care să îmbine estetica modernă cu funcționalitatea pe termen lung. Fiecare decizie este luată cu responsabilitate, 
+      având în vedere atât impactul vizual, cât și cel asupra mediului înconjurător.
+    </p>
+  </div>
+  <div class="col-md-6">
+    <img src="build.jpg" alt="Proiecte arhitectură" class="img-fluid project-img">
+  </div>
+</div>
+</section>
+
+<section id="servicii" class="my-5">
+    <div class="container">
+  <h2>Serviciile Noastre</h2>
+  <p>Oferim o gamă completă de servicii de arhitectură și design, adaptate nevoilor actuale și stilului de viață modern. 
+          De la concept și schiță inițială, până la proiectare detaliată și asistență pe 
+          parcursul execuției, ne concentrăm pe crearea unor spații funcționale, estetice și durabile. Fiecare proiect este tratat cu atenție maximă, punând 
+          accent pe comunicare deschisă, transparență și soluții personalizate. Indiferent că este vorba despre locuințe 
+          private, spații comerciale sau amenajări interioare, scopul nostru este să transformăm ideile în realitate și să 
+          oferim clienților nu doar un proiect, ci o experiență completă de colaborare. </p>
+  </div>
+  <div class="row">  
+    <div class="col-md-3 mb-4 d-flex">
+      <div class="card w-100">
+        <img src="desk-office-pen-ruler.jpg" class="card-img-top" alt="Proiect rezidențial">
+        <div class="card-body d-flex flex-column">
+          <p class="card-title h5">Proiect Rezidențial</p>
+          <p>Tip: case / Preț: de la 2000€/proiect</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-4 d-flex">
+      <div class="card w-100">
+        <img src="living-room-couch-interior-room-584399.jpg" class="card-img-top" alt="Design Interior">
+        <div class="card-body d-flex flex-column">
+        <p class="card-title h5">Design Interior</p>
+          <p>Tip: rezidențial / comercial / Preț: de la 1000€/proiect</p>
+          <span class="badge bg-warning">Ofertă specială</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-4 d-flex">
+      <div class="card w-100">
+        <img src="single-family-home.jpg" class="card-img-top" alt="Clădire">
+        <div class="card-body d-flex flex-column">
+          <p class="card-title h5">Renovare Clădiri</p>
+          <p>Tip: clădiri vechi / Preț: de la 1500€/proiect</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-4 d-flex">
+      <div class="card w-100">
+        <img src="team-work.jpg" class="card-img-top" alt="Echipă">
+        <div class="card-body d-flex flex-column">
+          <p class="card-title h5">Consultanță</p>
+          <p>Tip: consultanță proiecte / Preț: 50€/oră</p>
+          <span class="badge bg-info">Programări disponibile</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section id="contact" class="container py-5 d-flex flex-column align-items-center">
+
+  <h2 class="mb-4 text-center">Contact</h2>
+  <div class="card text-center mb-4">
+    <img src="w (3).jpg" class="card-img-top" alt="Doamnă la birou">
+    <div class="card-body">
+      <p class="card-text">
+        Dacă ai un proiect în minte sau dorești să discutăm despre ideile tale, 
+        nu ezita să mă contactezi. Sunt deschisă colaborărilor și gata să transform viziunea ta în realitate.
+      </p>
+    </div>
+  </div>
+  <div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d174851.57885632664!2d23.451700766398183!3d46.78350247568218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490c1f916c0b8b%3A0xbbc601c331f148b!2sCluj-Napoca!5e0!3m2!1sen!2sro!4v1766064575877!5m2!1sen!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+</section>
+
+<footer class="footer bg-dark text-light pt-5 pb-4">
+  <div class="container-fluid">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-md-4 d-flex align-items-center">
+        <img src="arhitect.png" alt="Logo Arhitect" class="footer-logo" style="max-height: 80px; margin-right: 10px;">
+        <span class="footer-text">ARH.ADRIANA</span>
+      </div>
+
+      <div class="col-md-4 text-center">
+        &copy; 2025 ARH.ADRIANA. Toate drepturile rezervate.
+      </div>
+
+      <div class="col-md-4 text-end">
+        <p class="mb-1"><strong>Email:</strong> adriana@arht.com</p>
+        <p class="mb-1"><strong>Telefon:</strong> 0712 345 678</p>
+        <div class="mt-2">
+          <a href="https://www.facebook.com/" class="text-light me-3">
+            <img src="facebook.png" alt="Facebook" width="30" height="30">
+          </a>
+          <a href="https://www.instagram.com/" class="text-light me-3">
+            <img src="instagram.png" alt="Instagram" width="30" height="30">
+          </a>
+          <a href="https://www.linkedin.com/" class="text-light me-3">
+            <img src="linkedin.png" alt="LinkedIn" width="30" height="30">
+          </a>   
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
